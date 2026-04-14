@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" width="520" height="140">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap');
+  </style>
+
+  <rect width="520" height="140" fill="#FFFFFF"/>
+
+  <!-- GoFalah as single baseline, positioned with tspans for color split -->
+  <text y="88"
+        font-family="'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+        font-size="58"
+        letter-spacing="-0.5">
+    <tspan x="80" font-weight="500" fill="#222222">Go</tspan>
+    <tspan font-weight="600" fill="#065F46">Falah</tspan>
+  </text>
+
+  <!-- Gold accent line under "Falah" -->
+  <!-- tspan auto-flows, so line starts where "Falah" begins -->
+  <rect x="148" y="98" width="200" height="2.5" fill="#C5993A"/>
+</svg>
