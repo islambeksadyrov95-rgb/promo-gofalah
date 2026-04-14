@@ -11,9 +11,12 @@ export function LeadForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("/api/lead", {
+      const res = await fetch("https://gofalah.com/api/public/leads", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Form-Token": process.env.NEXT_PUBLIC_FORM_TOKEN || "",
+        },
         body: JSON.stringify(form),
       });
 
